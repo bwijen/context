@@ -191,6 +191,17 @@ alias asm_sources
    : asm/make_arm_aapcs_elf_gas.S
      asm/jump_arm_aapcs_elf_gas.S
      asm/ontop_arm_aapcs_elf_gas.S
+   : <abi>sysv
+     <address-model>32
+     <architecture>arm
+     <binary-format>elf
+     <toolset>gcc
+   ;
+
+alias asm_sources
+   : asm/make_arm_aapcs_elf_gas.S
+     asm/jump_arm_aapcs_elf_gas.S
+     asm/ontop_arm_aapcs_elf_gas.S
    : <abi>aapcs
      <address-model>32
      <architecture>arm
@@ -252,6 +263,17 @@ alias asm_sources
      asm/jump_arm64_aapcs_elf_gas.S
      asm/ontop_arm64_aapcs_elf_gas.S
    : <abi>aapcs
+     <address-model>64
+     <architecture>arm
+     <binary-format>elf
+     <toolset>gcc
+   ;
+
+alias asm_sources
+   : asm/make_arm64_aapcs_elf_gas.S
+     asm/jump_arm64_aapcs_elf_gas.S
+     asm/ontop_arm64_aapcs_elf_gas.S
+   : <abi>sysv
      <address-model>64
      <architecture>arm
      <binary-format>elf
